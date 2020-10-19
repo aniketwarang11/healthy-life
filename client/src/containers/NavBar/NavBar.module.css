@@ -1,0 +1,218 @@
+.NavBar {
+  padding: 0;
+  margin: 0;
+  font: bold;
+  height: 70px;
+  display: block;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgb(18, 2, 250) 0%, rgb(1, 140, 253) 100%);
+  align-items: center;
+  z-index: 2;
+}
+
+.NavBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  /* background-color: rgb(247, 91, 1); */
+  box-sizing: border-box;
+}
+
+.NavBar li {
+  /* position: absolute; */
+  float: right;
+  box-sizing: border-box;
+}
+
+.NavBar li a {
+  margin-top: 10px;
+  display: block;
+  list-style: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.NavBar li a:hover {
+  /* border-bottom: 3px solid rgb(31, 31, 61); */
+  background: linear-gradient(
+    180deg,
+    rgb(1, 140, 253) 0%,
+    rgb(18, 2, 250) 100%
+  );
+  border-radius: 3px;
+  text-align: center;
+  margin: 17px 7px;
+  padding: 7px 9px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgb(3, 3, 3);
+}
+
+.Active {
+  background-color: rgb(119, 128, 243);
+  padding: 10px 12px;
+  /* border-bottom: 3px solid rgb(31, 31, 61); */
+}
+
+.Fitness {
+  font-size: 2rem;
+  padding: 0 10px;
+  margin: 10px 0;
+  color: white;
+  cursor: pointer;
+  float: left;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .NavBar {
+    position: relative;
+  }
+  .NavBarUlOpen {
+    position: fixed;
+    background: linear-gradient(
+      45deg,
+      rgb(18, 2, 250) 0%,
+      rgb(1, 140, 253) 100%
+    );
+    /* background-color: rgb(61, 54, 163); */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    clip-path: circle(1100px at 100% -10%);
+    -webkit-clip-path: circle(1100px at 100% -10%);
+    transition: all 1s ease-out;
+  }
+
+  .NavBarUl {
+    position: fixed;
+    /* background-color: rgb(61, 54, 163); */
+    background: linear-gradient(
+      45deg,
+      rgb(18, 2, 250) 0%,
+      rgb(1, 140, 253) 100%
+    );
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    clip-path: circle(10px at 100% -10%);
+    -webkit-clip-path: circle(10px at 100% -10%);
+    transition: all 1s ease-out;
+    /* display: none; */
+  }
+
+  .Hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .Hamburger:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .Line {
+    width: 40px;
+    height: 4px;
+    background: white;
+    margin: 6px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .LineDiv1 {
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    /* transform: rotate(45deg); */
+    transform: rotate(45deg) translate(0, 11px);
+  }
+
+  .LineDiv2 {
+    width: 40px;
+    height: 4px;
+    background: white;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-50px);
+    background: transparent;
+  }
+
+  .LineDiv3 {
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-45deg) translate(0, -11px);
+  }
+
+  .NavBar li {
+    width: 40%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+  }
+
+  .NavBar li a {
+    margin-top: 0px;
+    width: 100%;
+    height: 40px;
+    /* background-color: white; */
+  }
+
+  .NavBar li a:hover {
+    background-color: rgb(1, 140, 253);
+    border-radius: 3px;
+    text-align: center;
+    margin: 17px 7px;
+    padding: 7px 9px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px rgb(2, 2, 2);
+  }
+
+  /* .NavBar li {
+    opacity: 0;
+  }
+
+  .NavBar li a {
+    font-size: 1.5rem;
+  }
+
+  .NavBar li:nth-child(1) {
+    transition: all 0.5 ease 0.2s;
+  }
+  .NavBar li:nth-child(2) {
+    transition: all 0.5 ease 0.4s;
+  }
+  .NavBar li:nth-child(3) {
+    transition: all 0.5 ease 0.6s;
+  }
+  .NavBar li:nth-child(4) {
+    transition: all 0.5 ease 0.8s;
+  }
+
+  .NavBar li.fade {
+    opacity: 1;
+  } */
+}

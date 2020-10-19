@@ -1,0 +1,66 @@
+.Posts {
+  margin: 0 auto;
+  /* background: linear-gradient(90deg, rgb(18, 2, 250) 0%, rgb(1, 140, 253) 100%); */
+}
+
+/* display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto; */
+
+.H1 {
+  color: white;
+  text-align: center;
+  width: 60%;
+  height: 40px;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  background-color: rgb(18, 2, 250);
+}
+
+.Button {
+  color: white;
+  text-align: center;
+  width: 30%;
+  height: 40px;
+  margin: auto;
+}
+
+.Post {
+  width: 60%;
+  padding: 25px;
+  border: 1px solid rgb(145, 143, 143);
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px auto;
+  box-sizing: border-box;
+  /* float: left; */
+  cursor: pointer;
+  background: #1d2a64;
+  color: white;
+  border-radius: 5px;
+  height: 65vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 500px) {
+  .Post {
+    width: 70%;
+    padding: 16px;
+  }
+
+  .H1 {
+    width: 70%;
+  }
+}
+@media (max-width: 300px) {
+  .Post {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .H1 {
+    width: 90%;
+  }
+}

@@ -1,0 +1,40 @@
+.TaskList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60%;
+  background: #1d2a64;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.TaskList h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 2em;
+}
+
+@media (max-width: 800px) {
+  .TaskList {
+    margin: 20px auto;
+    width: 70%;
+  }
+  .TaskList h1 {
+    margin: 20px 0;
+    color: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  .TaskList {
+    margin: 20px auto;
+    width: 95%;
+  }
+  .TaskList h1 {
+    margin: 20px 0;
+    color: #fff;
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,39 @@
+.Form {
+  margin-bottom: 32px;
+}
+
+.Form input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(34, 119, 247);
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.Form input::placeholder {
+  color: #e2e2e2;
+}
+
+.Form button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(45deg, rgb(18, 2, 250) 0%, rgb(1, 140, 253) 100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@media (max-width: 500px) {
+  .Form input {
+    padding: 7px 16px 7px 8px;
+    width: 60%;
+  }
+
+  .Form button {
+    padding: 9px;
+  }
+}

@@ -1,0 +1,117 @@
+.AddPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60%;
+  background: #1d2a64;
+  text-align: center;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.AddPost input {
+  width: 85%;
+  padding: 10px 10px;
+  margin: 10px auto;
+  color: #fff;
+  border: 2px solid rgb(1, 140, 253);
+  background: transparent;
+  border-radius: 5px;
+}
+.AddPost textarea {
+  width: 85%;
+  padding: 10px 10px;
+  margin: 10px auto;
+  color: #fff;
+  border: 2px solid rgb(1, 140, 253);
+  background: transparent;
+  border-radius: 5px;
+}
+
+.AddPost input::placeholder {
+  color: #fff;
+}
+.AddPost textarea::placeholder {
+  color: #fff;
+}
+
+.AddPost input::-webkit-input-placeholder {
+  z-index: 0;
+  color: #cccccc;
+  position: relative;
+  padding-left: 0;
+  -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: padding 0.5s;
+}
+.AddPost textarea::-webkit-input-placeholder {
+  z-index: 0;
+  color: #cccccc;
+  position: relative;
+  padding-left: 0;
+  -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: padding 0.5s;
+}
+
+.AddPost input:focus::-webkit-input-placeholder {
+  /* padding-left: 100%; */
+  /* transform: translateY(-15px); */
+  color: transparent;
+}
+.AddPost textarea:focus::-webkit-input-placeholder {
+  /* padding-left: 100%; */
+  /* transform: translateY(-15px); */
+  color: transparent;
+}
+
+.AddPost input:focus {
+  outline: none;
+}
+.AddPost textarea:focus {
+  outline: none;
+}
+
+.Calories {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid rgb(32, 31, 58);
+  border-radius: 5px;
+  text-align: center;
+  background: #1d2a64;
+  box-shadow: 0 3px 5px rgb(5, 5, 5);
+  display: flex;
+}
+
+.AddPost h1 {
+  color: #fff;
+}
+
+.AddPost Button {
+  margin-top: 10px;
+  border: 1px solid rgb(1, 140, 253);
+}
+
+@media (max-width: 500px) {
+  .AddPost {
+    width: 80%;
+  }
+  .Calories {
+    width: 80%;
+    height: 80px;
+  }
+}
+@media (max-width: 300px) {
+  .AddPost {
+    width: 90%;
+  }
+  .Calories {
+    width: 90%;
+    height: 80px;
+  }
+}

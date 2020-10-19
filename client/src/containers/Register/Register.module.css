@@ -1,0 +1,78 @@
+.Image {
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(90deg, rgb(18, 2, 250) 0%, rgb(1, 140, 253) 100%); */
+}
+
+.Register {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  border: 1px solid rgb(41, 40, 40, 0.5);
+  box-shadow: 0 3px 5px rgb(5, 5, 5);
+  width: 40%;
+  border-radius: 5px;
+  background-color: rgb(1, 140, 253);
+  overflow: hidden;
+  display: block;
+}
+
+.Register Input {
+  margin-top: 20px;
+}
+
+.Register h3 {
+  margin-top: -8px;
+  display: block;
+}
+
+.H1 {
+  color: white;
+  width: 40%;
+  height: 40px;
+  margin: 15px auto;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 3px rgb(15, 15, 15);
+  background-color: rgb(18, 2, 250);
+}
+
+.Button {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .Register {
+    width: 80%;
+  }
+
+  .H1 {
+    width: 80%;
+  }
+
+  .Button {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 300px) {
+  .Register {
+    width: 90%;
+  }
+
+  .H1 {
+    width: 90%;
+  }
+
+  .Button {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-evenly;
+  }
+}

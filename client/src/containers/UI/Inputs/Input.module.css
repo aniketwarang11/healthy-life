@@ -1,0 +1,22 @@
+.Input {
+  box-sizing: border-box;
+}
+
+.Input input {
+  border: 2px solid rgb(93, 94, 94);
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+
+.Input input:focus {
+  outline: none;
+}
+
+.Input input:hover {
+  border: 2px solid rgb(250, 250, 250);
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgb(5, 5, 5);
+}

@@ -1,0 +1,18 @@
+.App {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url("./asserts/Background.png");
+  background-attachment: fixed; */
+  /* background-color: rgb(218, 216, 216); */
+  background: linear-gradient(
+    180deg,
+    rgb(206, 243, 252) 0%,
+    rgb(126, 242, 250) 100%
+  );
+}
+
+.Bi {
+  position: fixed;
+}

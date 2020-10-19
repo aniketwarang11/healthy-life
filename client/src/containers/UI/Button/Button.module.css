@@ -1,0 +1,19 @@
+.Button {
+  background-color: rgb(18, 2, 250);
+  box-sizing: border-box;
+  border: 1px solid black;
+  color: white;
+  border-radius: 3px;
+  padding: 4px 10px;
+  /* background: linear-gradient(90deg, rgb(18, 2, 250) 0%, rgb(1, 140, 253) 100%); */
+}
+
+.Button:hover {
+  color: black;
+  background-color: rgb(1, 140, 253);
+  box-shadow: 0 3px 5px rgb(5, 5, 5);
+}
+
+.Button:focus {
+  outline: none;
+}

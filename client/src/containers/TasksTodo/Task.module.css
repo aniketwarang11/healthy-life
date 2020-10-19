@@ -1,0 +1,43 @@
+.Row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  background: linear-gradient(45deg, rgb(18, 2, 250) 0%, rgb(1, 140, 253) 100%);
+}
+
+.Icon {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  /* color: #fff; */
+}
+
+.RiCloseCircleLine {
+  margin-right: 5px;
+  color: rgb(253, 252, 252);
+}
+
+.TiEdit {
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .Row {
+    margin: 4px auto;
+    padding: 6px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  .Icon {
+    font-size: 1.3em;
+  }
+  .RiCloseCircleLine {
+    margin-right: 3px;
+  }
+}

@@ -1,0 +1,81 @@
+.Weight {
+  text-align: center;
+  /* background: linear-gradient(90deg, rgb(18, 2, 250) 0%, rgb(1, 140, 253) 100%); */
+}
+
+.WeightGain {
+  padding: 20px 10px;
+  width: 40%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(41, 40, 40, 0.5);
+  box-shadow: 0 3px 5px rgb(5, 5, 5);
+  background-color: rgb(1, 140, 253);
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.H1 {
+  color: white;
+  width: 40%;
+  height: 40px;
+  margin: 20px auto;
+  box-shadow: 0 2px 3px rgb(15, 15, 15);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  background-color: rgb(18, 2, 250);
+}
+
+.WeightGain Input {
+  margin-top: -20px;
+}
+
+.Calories {
+  width: 40%;
+  height: 40px;
+  margin: 10px auto;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid rgb(32, 31, 58);
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(1, 140, 253);
+  box-shadow: 0 3px 5px rgb(5, 5, 5);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .Calories FaWindowClose {
+  padding-right: 10px;
+} */
+
+@media (max-width: 500px) {
+  .WeightGain {
+    width: 80%;
+  }
+
+  .H1 {
+    width: 80%;
+  }
+
+  .Calories {
+    width: 80%;
+    height: 80px;
+  }
+}
+@media (max-width: 300px) {
+  .WeightGain {
+    width: 90%;
+  }
+
+  .H1 {
+    width: 90%;
+  }
+  .Calories {
+    width: 90%;
+    height: 80px;
+  }
+}
